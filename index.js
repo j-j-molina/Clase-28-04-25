@@ -23,3 +23,12 @@ app.get(
         const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
         res.send(fraseAleatoria);
     });
+app.post(
+    "/create-user",
+    (req, res) => {
+        const newUser={
+            name: body.name,
+            email: body.email
+        }
+    }
+)
